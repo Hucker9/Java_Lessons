@@ -193,6 +193,128 @@ public class Homeworks {
 
 
         }
+        System.out.println("------------------------------------");
+        System.out.println(31);
+        a = 7;
+        b = 2;
+        c = 8;
+        int d = 6;
+        if (a > b && (a > c) && (a > d)) {
+            System.out.println(a);
+        } else {
+            if ((b > a) && (b > c) && (b > d)) {
+                System.out.println(b);
+            } else {
+                if ((c > a) && (c > b) && (c > d)) {
+                    System.out.println(c);
+                } else {
+                    System.out.println(d);
+                }
+            }
+        }
+        System.out.println("------------------------------------");
+        System.out.println(32);
+        a = 1;
+        b = 7;
+        c = 8;
+        d = 5;
+        if (a < b && (a < c) && (a < d)) {
+            System.out.println(a);
+        } else {
+            if ((b < a) && (b < c) && (b < d)) {
+                System.out.println(b);
+            } else {
+                if ((c < a) && (c < b) && (c < d)) {
+                    System.out.println(c);
+                } else {
+                    System.out.println(d);
+                }
+            }
+        }
+        System.out.println("------------------------------------");
+        System.out.println(33);
+        a = 5;
+        b = 2;
+        c = 8;
+        d = 7;
+        if (a == 1 || b == 1 || c == 1 || d == 1) {
+            System.out.println(x = true);
+        } else {
+            System.out.println(x = false);
+        }
+
+        System.out.println("------------------------------------");
+        System.out.println(34);
+        a = 5;
+        b = 2;
+        c = 1;
+        d = 7;
+        if (a + b == c + d) {
+            System.out.println(x = true);
+        } else {
+            if (a + d == b + c) {
+                System.out.println(x = true);
+            } else {
+                if (a + c == b + d) {
+                    System.out.println(x = true);
+
+                } else {
+                    System.out.println(x = false);
+                }
+            }
+        }
+        System.out.println("------------------------------------");
+        System.out.println(35);
+        a = 5;
+        b = 2;
+        c = 0;
+        d = 3;
+        if ((a == b + c + d) || (b == a + c + d) || (c == a + b + d) || (d == a + b + c)) {
+            System.out.println(x = true);
+        } else {
+            System.out.println(x = false);
+        }
+        System.out.println("------------------------------------");
+        System.out.println(36);
+        a = 5;
+        b = 2;
+        c = 0;
+        d = 3;
+        if ((a % 2 == 1 && b % 2 == 1) || (c % 2 == 1 && d % 2 == 1)) {
+            System.out.println(1);
+        } else {
+            if ((a % 2 == 1 && d % 2 == 1) || (b % 2 == 1 && c % 2 == 1)) {
+                System.out.println(1);
+            } else {
+                if ((a % 2 == 1 && c % 2 == 1) || (b % 2 == 1 && d % 2 == 0)) {
+                    System.out.println(1);
+                } else {
+                    System.out.println(0);
+                }
+            }
+        }
+        System.out.println("------------------------------------");
+        System.out.println(37);
+        a = 5;
+        b = 7;
+        c = 9;
+        d = 11;
+        if (d - c == b - a) {
+            System.out.println(x = true);
+        } else {
+            System.out.println(x = false);
+        }
+        System.out.println("------------------------------------");
+        System.out.println(38);
+        a = 5;
+        b = 15;
+        c = 45;
+        d = 13;
+        if (d / c == b / a) {
+            System.out.println(x = true);
+        } else {
+            System.out.println(x = false);
+        }
 
     }
 }
