@@ -1,15 +1,14 @@
 public class Homeworks {
-    public static void main(String[] args) {//es fill arecinq 1-100 tver@ zangvaci mej
-        int[] y = new int[100];
-        y[0] = 1;
-        y[99] = 100;
-        int a = y[0], b = y[99];
-        for (; a < b ; a++) {
-            y[a]=a+1;
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = 2;
+            for (int j = 0; j < 1; j++) {
+                System.out.print(arr[i] + " ");
+            }
         }
     }
 }
-
 
 
 
