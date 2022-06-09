@@ -40,12 +40,10 @@ public class Lesson_3 {
             default: {
                 System.out.println("chka tenc or");
                 break;
-
             }
 
 
         }
-
         System.out.println("----------------------------------------------");
         int a = 8, b = 6, c = 7;
         if (a > b && a > c) {
