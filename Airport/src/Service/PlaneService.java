@@ -73,30 +73,72 @@ public class PlaneService {
         if (p2.getSeats() > p.getSeats() && p2.getSeats() > p1.getSeats()) {
             System.out.println(p2.getCountry());
         }
-        if(p2.getSeats() == p.getSeats() && p2.getSeats() == p1.getSeats()){
+        if (p2.getSeats() == p.getSeats() && p2.getSeats() == p1.getSeats()) {
             System.out.println(p.getCountry());
         }
     }
-    public void task6(Plane[] planes ){
-        for(Plane plane:planes){
-            if(plane.getIsMilitary()==false){
+
+    public void task6(Plane[] planes) {
+        for (Plane plane : planes) {
+            if (plane.getIsMilitary() == false) {
                 System.out.println(plane.getModel());
-            }
-            else {
+            } else {
                 System.out.println("That plane is not military");
             }
         }
-   }
-   public void task7(Plane[] planes){
-        for(Plane plane : planes){
-            if(plane.getIsMilitary()==true){
-                if(plane.getHours()>=100){
+    }
+
+    public void task7(Plane[] planes) {
+        for (Plane plane : planes) {
+            if (plane.getIsMilitary() == true) {
+                if (plane.getHours() >= 100) {
                     System.out.println(plane.getModel());
                 }
-            }
-            else {
+            } else {
                 System.out.println("That plane is not military");
             }
         }
-   }
+    }
+
+    public Plane task8(Plane[] planes) {
+        Plane min = planes[0];
+        for (Plane plane : planes) {
+            if (plane.getWeight() <= min.getWeight()) {
+                min = plane;
+            }
+        }
+        return min;
+    }
+
+    public Plane task9(Plane[] planes) {
+        Plane minCost = null;
+        for (int i = 0; i < planes.length; i++) {
+            if (minCost == null) {
+                if (planes[i].getIsMilitary()) {
+                    minCost = planes[i];
+                }
+            } else if (planes[i].getIsMilitary() && planes[i].getCost() < minCost.getCost()) {
+                minCost = planes[i];
+            }
+        }
+        if (minCost == null) {
+            System.out.println();
+        }
+        return minCost;
+    }
+    public void task10(Plane[]planes){
+        Plane temp = null;
+        for (int i = 0; i < planes.length; i++) {
+            for (int j = 1; j < planes.length-i; j++) {
+                if(planes[j-1].getYear()<planes[j].getYear()){
+                    temp = planes[j-1];
+                    planes[j-1] = planes[j];
+                    planes[j]=temp;
+                }
+            }
+            for (Plane x:planes ) {
+                System.out.println(x.getCost());
+            }
+        }
+    }
 }

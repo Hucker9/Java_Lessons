@@ -8,8 +8,7 @@ public class Airport_test {
         Plane p2 = service.create();
         Plane p3 = service.create();
         Plane[] planes = new Plane[2];
-        p1= service.task8(planes);
-        System.out.println(p1.getWeight());
+
 
 
 
