@@ -117,7 +117,7 @@ public class PlaneService {
                 if (planes[i].getIsMilitary()) {
                     minCost = planes[i];
                 }
-            } else if (planes[i].getIsMilitary() && planes[i].getCost() < minCost.getCost()) {
+            } else if (planes[i].getIsMilitary() && planes[i].getCost() <= minCost.getCost()) {
                 minCost = planes[i];
             }
         }
