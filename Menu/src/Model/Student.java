@@ -1,5 +1,7 @@
 package Model;
 
+import Service.Menu_Service;
+
 import java.text.ParseException;
 
 public class Student {
@@ -54,6 +56,24 @@ public class Student {
 
     public double getMark() {
         return mark;
+    }
+
+    @Override
+    public String toString() {
+        return "Student name :" + name + "\n" +
+                "Student lastname :" + lastName + "\n" +
+                "Student year :" + year + "\n" +
+                "Student gender :" + gender + "\n" +
+                "Student mark :" + mark + "\n" + "-----------------------" + "\n";
+
+    }
+    public String toString1() {
+        return "Student name :" + name + "\n" +
+                "Student lastname :" + lastName + "\n" +
+                "Student year :" + year + "\n" +
+                "Student gender :" + gender + "\n" +
+                "Student mark :" + mark + "\n";
+
     }
 
 }
