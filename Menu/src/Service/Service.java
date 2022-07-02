@@ -52,7 +52,7 @@ public class Service {
         int countOfStudents = c;
         Student[] students6 = new Student[countOfStudents];
         for (int i = 0; i < countOfStudents; i++) {
-            students5[i] = studentCreate();
+            students6[i] = studentCreate();
         }
         Service.write(students6);
     }
