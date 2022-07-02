@@ -48,13 +48,13 @@ public class Service {
 
     public static void write() throws Exception {
         System.out.println("how many students you want to create");
-        int z = y.nextInt();
-        int countOfStudents = z;
-        Student[] students5 = new Student[countOfStudents];
+        int c = y.nextInt();
+        int countOfStudents = c;
+        Student[] students6 = new Student[countOfStudents];
         for (int i = 0; i < countOfStudents; i++) {
             students5[i] = studentCreate();
         }
-        Service.write(students5);
+        Service.write(students6);
     }
 
     public static void theFemaleStudents(Student[] students) {
@@ -170,4 +170,3 @@ public class Service {
     }
 
 }
-

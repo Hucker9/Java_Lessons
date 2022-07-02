@@ -38,8 +38,10 @@ public class Menu_Service extends Service {
                     break;
                 case 6:
                     write();
+                    break;
                 case 7:
                     write1();
+                    break;
                 case 0:
                     break;
                 default:
@@ -49,5 +51,3 @@ public class Menu_Service extends Service {
         }
     }
 }
-
-
