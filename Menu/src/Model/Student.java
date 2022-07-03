@@ -67,6 +67,7 @@ public class Student {
                 "Student mark :" + mark + "\n" + "-----------------------" + "\n";
 
     }
+
     public String toString1() {
         return "Student name :" + name + "\n" +
                 "Student lastname :" + lastName + "\n" +

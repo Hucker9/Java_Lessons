@@ -1,11 +1,9 @@
 package Service;
 
-import Model.Student;
 
 import java.util.Scanner;
 
-public class Menu_Service extends Service {
-
+public class Menu_Service extends Service_1 {
     public static void menu() throws Exception {
         int a = 1;
         while (a != 0) {
@@ -27,6 +25,7 @@ public class Menu_Service extends Service {
                     break;
                 case 2:
                     theBestFemaleStudent();
+                    break;
                 case 3:
                     sortByMarks();
                     break;
