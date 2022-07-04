@@ -1,9 +1,5 @@
 package Model;
 
-import Service.Menu_Service;
-
-import java.text.ParseException;
-
 public class Student {
     private String name;
     private String lastName;
@@ -11,7 +7,7 @@ public class Student {
     private char gender;
     private double mark;
 
-    public Student(String name, String lastName, char gender, int year, double mark) {
+    public Student(String name, String lastName, int year, char gender, double mark) {
         if (name.isEmpty() == false) {
             this.name = name;
         }
@@ -75,6 +71,10 @@ public class Student {
                 "Student gender :" + gender + "\n" +
                 "Student mark :" + mark + "\n";
 
+    }
+
+    public String toString2() {
+        return name + "," + lastName + "," + year + "," + gender + "," + mark + "\n";
     }
 
 }

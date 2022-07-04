@@ -3,7 +3,11 @@ package Service;
 import Model.Student;
 
 import java.nio.file.Files;
+
 import java.nio.file.Paths;
+
+import java.nio.file.StandardOpenOption;
+
 import java.util.Scanner;
 
 public class Service_1 extends Service {
@@ -20,12 +24,30 @@ public class Service_1 extends Service {
         char gender = m.next().charAt(0);
         System.out.println("Enter the student mark");
         double mark = m.nextDouble();
-        Student student = new Student(name, lastName, gender, year, mark);
+        Student student = new Student(name, lastName, year, gender, mark);
         return student;
     }
 
     static Scanner y = new Scanner(System.in);
+    public static void readAndWrite()throws Exception{
+        Student[]students = read("C:\\Users\\georg\\OneDrive\\Desktop\\aaa.txt");
+        for (Student student : students) {
+            Files.write(Paths.get("C:\\Users\\georg\\OneDrive\\Desktop\\"+student.getName()), student.toString1().getBytes());
+        }
+    }
 
+    public static void write2() throws Exception{
+        System.out.println("how many students you want to create");
+        int z = y.nextInt();
+        int countOfStudents = z;
+        Student[] students7 = new Student[countOfStudents];
+        for (int i = 0; i < countOfStudents; i++) {
+            students7[i] = studentCreate();
+        }
+        for (Student student : students7) {
+            Files.write(Paths.get("C:\\Users\\georg\\OneDrive\\Desktop\\aaa.txt"), student.toString2().getBytes(), StandardOpenOption.APPEND);
+        }
+    }
     public static void write1() throws Exception {
         System.out.println("how many students you want to create");
         int z = y.nextInt();

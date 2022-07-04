@@ -16,6 +16,7 @@ public class Menu_Service extends Service_1 {
             System.out.println("press '5'to see the expelled students ");
             System.out.println("press '6' print all students in one folder ");
             System.out.println("press '7' to print the students  on desktop each in another folder");
+            System.out.println("press '8' to read students from aaa.txt and print it on another folder");
             System.out.println("press '0' to exit");
             int z = x.nextInt();
             a = z;
@@ -40,6 +41,10 @@ public class Menu_Service extends Service_1 {
                     break;
                 case 7:
                     write1();
+                    break;
+                case 8:
+                    write2();
+                    readAndWrite();
                     break;
                 case 0:
                     break;
