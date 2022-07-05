@@ -29,14 +29,15 @@ public class Service_1 extends Service {
     }
 
     static Scanner y = new Scanner(System.in);
-    public static void readAndWrite()throws Exception{
-        Student[]students = read("C:\\Users\\georg\\OneDrive\\Desktop\\aaa.txt");
+
+    public static void readAndWrite() throws Exception {
+        Student[] students = read("C:\\Users\\georg\\OneDrive\\Desktop\\aaa.txt");
         for (Student student : students) {
-            Files.write(Paths.get("C:\\Users\\georg\\OneDrive\\Desktop\\"+student.getName()), student.toString1().getBytes());
+            Files.write(Paths.get("C:\\Users\\georg\\OneDrive\\Desktop\\" + student.getName()), student.toString1().getBytes());
         }
     }
 
-    public static void write2() throws Exception{
+    public static void write2() throws Exception {
         System.out.println("how many students you want to create");
         int z = y.nextInt();
         int countOfStudents = z;
@@ -48,6 +49,7 @@ public class Service_1 extends Service {
             Files.write(Paths.get("C:\\Users\\georg\\OneDrive\\Desktop\\aaa.txt"), student.toString2().getBytes(), StandardOpenOption.APPEND);
         }
     }
+
     public static void write1() throws Exception {
         System.out.println("how many students you want to create");
         int z = y.nextInt();

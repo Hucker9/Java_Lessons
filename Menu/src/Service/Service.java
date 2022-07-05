@@ -7,12 +7,12 @@ import java.nio.file.*;
 public class Service {
     static String URL = "C:\\Users\\georg\\IdeaProjects\\Java_Lessons\\Menu\\src\\Students";
 
-    public  static Student[] read(String path) throws Exception{
-        String[] s =  Files.readAllLines(Paths.get(path)).toArray(new String[0]);
+    public static Student[] read(String path) throws Exception {
+        String[] s = Files.readAllLines(Paths.get(path)).toArray(new String[0]);
         Student[] students = new Student[s.length];
         for (int i = 0; i < s.length; i++) {
-            String[]split = s[i].split(",");
-            Student student = new Student(split[0],split[1],Integer.parseInt(split[2]),split[3].charAt(0),Double.parseDouble(split[4]));
+            String[] split = s[i].split(",");
+            Student student = new Student(split[0], split[1], Integer.parseInt(split[2]), split[3].charAt(0), Double.parseDouble(split[4]));
             students[i] = student;
         }
         return students;
