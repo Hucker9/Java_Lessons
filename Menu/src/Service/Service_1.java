@@ -10,7 +10,7 @@ import java.nio.file.StandardOpenOption;
 
 import java.util.Scanner;
 
-public class Service_1 extends Service {
+public abstract class Service_1 extends Service {
     public static Student studentCreate() {
 
         Scanner m = new Scanner(System.in);

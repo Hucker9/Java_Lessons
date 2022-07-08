@@ -3,7 +3,7 @@ package Service;
 
 import java.util.Scanner;
 
-public class Menu_Service extends Service_1 {
+public abstract class Menu_Service extends Service_1 {
     public static void menu() throws Exception {
         int a = 1;
         while (a != 0) {

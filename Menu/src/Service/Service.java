@@ -4,7 +4,7 @@ import Model.Student;
 
 import java.nio.file.*;
 
-public class Service {
+public abstract class Service {
     static String URL = "C:\\Users\\georg\\IdeaProjects\\Java_Lessons\\Menu\\src\\Students";
 
     public static Student[] read(String path) throws Exception {
