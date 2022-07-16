@@ -70,11 +70,10 @@ public class Student {
                 "Student year :" + year + "\n" +
                 "Student gender :" + gender + "\n" +
                 "Student mark :" + mark + "\n";
-
     }
 
     public String toString2() {
-        return name + "," + lastName + "," + year + "," + gender + "," + mark + "\n";
+        return name + "," + lastName + "," + year + "," + gender + "," + mark + "\n" ;
     }
 
 }

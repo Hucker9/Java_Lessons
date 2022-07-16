@@ -6,6 +6,9 @@ import java.nio.file.*;
 
 public abstract class Service {
     static String URL = "C:\\Users\\georg\\IdeaProjects\\Java_Lessons\\Menu\\src\\Students";
+    static String URL_1 ="C:\\Users\\georg\\OneDrive\\Desktop\\aaa.txt\\" ;
+
+
 
     public static Student[] read(String path) throws Exception {
         String[] s = Files.readAllLines(Paths.get(path)).toArray(new String[0]);

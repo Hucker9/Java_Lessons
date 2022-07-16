@@ -31,7 +31,7 @@ public abstract class Service_1 extends Service {
     static Scanner y = new Scanner(System.in);
 
     public static void readAndWrite() throws Exception {
-        Student[] students = read("C:\\Users\\georg\\OneDrive\\Desktop\\aaa.txt");
+        Student[] students = read(URL_1);
         for (Student student : students) {
             Files.write(Paths.get("C:\\Users\\georg\\OneDrive\\Desktop\\" + student.getName()), student.toString1().getBytes());
         }
